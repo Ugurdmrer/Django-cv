@@ -1,43 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth" dir="ltr">
-  
-<!-- Mirrored from themihub.com/html/morex-demo/morex/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Jun 2023 20:05:49 GMT -->
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Morex - Personal Portfolio HTML Template</title>
- 
-<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&amp;display=swap" rel="stylesheet">
-    
-     <!-- Plugins css -->
-    <link rel="stylesheet" href="assets/css/mobilemenu.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/glightbox.min.css" /> -->
-    <link rel="stylesheet" href="../../../../cdn.jsdelivr.net/npm/swiper%408/swiper-bundle.min.css"/>
-    <!-- Tailwind css -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-        document.documentElement.classList.add("dark");
-      } 
-      if (localStorage.getItem("theme-color") === "light") {
-        document.documentElement.classList.remove("dark");
-      } 
-    </script>
-  </head>
-  <body class="font-rubik dark:bg-dark_primary_bg">
-
-    <!-- Preloader start -->
-    <div id="preloader">
-        <div class="loader--border"></div>
-    </div>
-    <!-- Preloader end -->
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Blog{% endblock %}
+{% block content %}
 
     <!-- Collapsible navigation start -->
     <div class="toggle__navigation fixed ltr:left-[30px] rtl:right-[30px] top-[30px] z-50 pointer-events-none md:hidden">
@@ -127,72 +91,6 @@
       
     </div>
     <!-- Dark and light button end -->
-
-
-    <!-- Mobile Menu nav start -->
-    <div class="md:block hidden fixed z-[98] bg-white dark:bg-dark_accent1 py-4 px-4 w-full mx-auto bottom-0 shadow-[0_0_25px_0_rgba(196,206,213,0.5)] dark:shadow-[-10px_0_20px_0_rgba(0,0,0,0.1)]">
-      <nav>
-        <ul class="flex justify-around items-center">
-          <li>
-            <a href="index-2.html" class="mobile--menu__nav--item bg-accent1 w-11 h-11 rounded-full text-white flex items-center justify-center relative transition-all duration-400">
-              <span class="relative z-10">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23">
-                  <text id="_" data-name="" transform="translate(0 19)" fill="currentColor" font-size="21.018" font-family="icofont, IcoFont" letter-spacing="0.015em"><tspan x="0" y="0"></tspan></text>
-                </svg>
-              </span>
-            </a>
-          </li>
-          <li >
-            <a href="about.html" class="mobile--menu__nav--item bg-accent1 w-11 h-11 rounded-full text-white flex items-center justify-center relative transition-all duration-400">
-              <span class="relative z-10">
-                <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-                  <text id="_" data-name="" transform="translate(0 14)" fill="currentColor" font-size="16.241" font-family="icofont, IcoFont" letter-spacing="0.015em"><tspan x="0" y="0"></tspan></text>
-                </svg>
-              </span>
-            </a>
-          </li>
-          <li >
-            <a href="services.html" class="mobile--menu__nav--item bg-accent1 w-11 h-11 rounded-full text-white flex items-center justify-center relative transition-all duration-400">
-              <span class="relative z-10">
-                <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 17 17">
-                  <text id="_" data-name="" transform="translate(0 14)" fill="currentColor" font-size="16.241" font-family="icofont, IcoFont" letter-spacing="0.015em"><tspan x="0" y="0"></tspan></text>
-                </svg>
-              </span>
-            </a>
-          </li>
-          <li >
-            <a href="portfolio.html" class="mobile--menu__nav--item bg-accent1 w-11 h-11 rounded-full text-white flex items-center justify-center relative transition-all duration-400">
-              <span class="relative z-10">
-                <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 37 40">
-                  <text id="_" data-name="" transform="translate(0 32)" fill="currentColor" font-size="36.378" font-family="icofont, IcoFont"><tspan x="0" y="0"></tspan></text>
-                </svg>
-              </span>
-            </a>
-          </li>
-          <li >
-            <a href="blog.html" class="mobile--menu__nav--item bg-accent1 w-11 h-11 rounded-full text-white flex items-center justify-center relative transition-all duration-400">
-              <span class="relative z-10">
-                <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-                  <text id="_" data-name="" transform="translate(0 14)" fill="currentColor" font-size="16.241" font-family="icofont, IcoFont" letter-spacing="0.015em"><tspan x="0" y="0"></tspan></text>
-                </svg>
-                
-              </span>
-            </a>
-          </li>
-          <li >
-            <a href="contact.html" class="mobile--menu__nav--item bg-accent1 w-11 h-11 rounded-full text-white flex items-center justify-center relative transition-all duration-400">
-              <span class="relative z-10">
-                <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25">
-                  <text id="_" data-name=" " transform="translate(0 20)" fill="currentColor" font-size="16.241" font-family="icofont, IcoFont" letter-spacing="0.015em"><tspan x="0" y="0"></tspan><tspan y="0" font-size="18.896" font-family="SegoeUI, Segoe UI"> </tspan></text>
-                </svg>
-              </span>
-            </a>
-          </li>
-
-        </ul>
-      </nav>
-    </div>
-    <!-- Mobile Menu nav end -->
 
     <!-- Main wrapper start -->
     <main class="md:pb-[90px]">
@@ -992,32 +890,4 @@
       
     </main>
     <!-- Main wrapper end -->
-
-
-    <!-------- Plugins js ------>
-
-    <!-- Swiper js -->
-    <script src="../../../../cdn.jsdelivr.net/npm/swiper%408/swiper-bundle.min.js"></script>
-    
-     <!-- imagesloaded js -->
-    <script src="assets/js/imagesloaded.pkgd.min.js" defer></script>
-
-    <!-- Isotope js -->
-    <script src="assets/js/isotope.pkgd.min.js" defer></script>
-
-  <!-- Custom js -->
-    <script src="assets/js/script.js" defer></script>
-
-    <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-        document.getElementById("light__to--dark")?.classList.add("dark--version");
-      } 
-      if (localStorage.getItem("theme-color") === "light") {
-        document.getElementById("light__to--dark")?.classList.remove("dark--version");
-      } 
-    </script>
-  </body>
-
-<!-- Mirrored from themihub.com/html/morex-demo/morex/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Jun 2023 20:05:51 GMT -->
-</html>
+    {% endblock %}
