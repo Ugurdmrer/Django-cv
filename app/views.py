@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import request
-from .models import About, Service, Portfolio, Blog
+from .models import About, Service, Portfolio, Blog, Education
 
 
 def index(request):
@@ -8,8 +8,9 @@ def index(request):
 
 def about(request):
     refferances = About.objects.all()
+    educations = Education.objects.all()
     
-    return render(request,'about.html',{'refferances':refferances})
+    return render(request,'about.html',{'refferances':refferances,'educations':educations})
 
 def services(request):
     return render(request,'services.html')
