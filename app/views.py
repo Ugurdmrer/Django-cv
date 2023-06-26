@@ -17,7 +17,8 @@ def services(request):
     return render(request,'services.html',{'services':service})
 
 def portfolio(request):
-    return render(request,'portfolio.html')
+    portfolios = Portfolio.objects.all()
+    return render(request,'portfolio.html',{'portfolios':portfolios})
 
 def blog(request):
     return render(request,'blog.html')

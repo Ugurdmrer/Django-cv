@@ -49,6 +49,10 @@ class Portfolio(models.Model):
     header = models.CharField(max_length=50)
     description = models.TextField(max_length=200)
     image = models.ImageField()
+    portfolio_project = models.CharField(max_length=50, default="")
+    client = models.CharField(max_length=50, default="")
+    language = models.CharField(max_length=50, default="")
+    preview = models.CharField(max_length=50, default="")
     
     
 class Comment(models.Model):
@@ -59,6 +63,7 @@ class Comment(models.Model):
     name = models.CharField(max_length=50)
     email = models.EmailField()
     message = models.CharField(max_length=300)
+    date = models.DateField(auto_created=True, auto_now=True)
     
 class Blog(models.Model):
     
