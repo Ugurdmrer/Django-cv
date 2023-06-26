@@ -18,6 +18,7 @@ class About(models.Model):
     
     header = models.CharField(max_length=50)
     description = models.TextField(max_length=200)
+    company = models.CharField(max_length=30,default="")
     icon = models.TextField(max_length=50)
     date = models.DateField()
     
