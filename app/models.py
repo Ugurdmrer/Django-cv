@@ -40,7 +40,6 @@ class Service(models.Model):
     header = models.CharField(max_length=50)
     description = models.TextField(max_length=200)
     icon = models.TextField(max_length=50)
-    link = models.URLField(100)
     
 class Portfolio(models.Model):
     

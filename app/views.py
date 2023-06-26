@@ -13,7 +13,8 @@ def about(request):
     return render(request,'about.html',{'refferances':refferances,'educations':educations})
 
 def services(request):
-    return render(request,'services.html')
+    service = Service.objects.all()
+    return render(request,'services.html',{'services':service})
 
 def portfolio(request):
     return render(request,'portfolio.html')
