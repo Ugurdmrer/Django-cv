@@ -401,7 +401,7 @@
               class="absolute w-[1px] ltr:left-0 rtl:right-0 top-[10px] bottom-[5px] bg-accent1"
             ></div>
             <!-- border line  end-->
-            {% for referance in referances %}
+            {% for referance in refferances %}
             <!-- Single resume start -->
             <div
               class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative"
@@ -438,7 +438,7 @@
                   </h3>
                   <span
                     class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center"
-                    >Shopify</span
+                    >{{ referance.company }}</span
                   >
                 </div>
                 <p
@@ -454,111 +454,6 @@
             </div>
             <!-- Single resume end -->
             {% endfor %}
-            <!-- Single resume start -->
-            <div
-              class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative mt-[40px]"
-            >
-              <span
-                class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"
-              ></span>
-              <div class="w-[70px] h-[70px]">
-                <span
-                  class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center"
-                >
-                  <svg
-                    width="25"
-                    height="40"
-                    fill="currentColor"
-                    stroke="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
-                <div
-                  class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start"
-                >
-                  <h3
-                    class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[25px] text-primary dark:text-white"
-                  >
-                    WEB DEVELOPER
-                  </h3>
-                  <span
-                    class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center"
-                    >Envato</span
-                  >
-                </div>
-                <p
-                  class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]"
-                >
-                  Promote your blog posts, case udie, and product ouncems nts
-                  with thehe branded videos.
-                </p>
-                <span
-                  class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block"
-                  >2017</span
-                >
-              </div>
-            </div>
-            <!-- Single resume end -->
-
-            <!-- Single resume start -->
-            <div
-              class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative mt-[40px]"
-            >
-              <span
-                class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"
-              ></span>
-              <div class="w-[70px] h-[70px]">
-                <span
-                  class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center"
-                >
-                  <svg
-                    width="25"
-                    height="40"
-                    fill="currentColor"
-                    stroke="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
-                <div
-                  class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start"
-                >
-                  <h3
-                    class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[25px] text-primary dark:text-white"
-                  >
-                    UI/UX DESIGNER
-                  </h3>
-                  <span
-                    class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center"
-                    >Udemy</span
-                  >
-                </div>
-                <p
-                  class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]"
-                >
-                  Promote your blog posts, case udie, and product ouncems nts
-                  with thehe branded videos.
-                </p>
-                <span
-                  class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block"
-                  >2014</span
-                >
-              </div>
-            </div>
-            <!-- Single resume end -->
           </div>
         </div>
         <!-- Skill -->

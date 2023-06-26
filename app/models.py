@@ -22,6 +22,16 @@ class About(models.Model):
     icon = models.TextField(max_length=50)
     date = models.DateField()
     
+class Education(models.Model):
+    def __str__(self) -> str:
+        return self.header
+    
+    header = models.CharField(max_length=50)
+    description = models.TextField(max_length=200)
+    university = models.CharField(max_length=30,default="")
+    icon = models.TextField(max_length=50)
+    date = models.DateField()
+    
 class Service(models.Model):
     
     def __str__(self) -> str:
